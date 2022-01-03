@@ -1,0 +1,26 @@
+GET http://localhost:5000/subscribers/61d21947b1a7bdb627921ad8
+
+###
+GET http://localhost:5000/subscribers
+###
+
+POST http://localhost:5000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Bharath Kumar SA",
+    "subscribedToChannel": "My channel"
+}
+
+###
+
+PATCH  http://localhost:5000/subscribers/61d36fb33ab5bb23d1acc691
+Content-Type: application/json
+
+{   
+    "name": "Ramy Baby Swee"
+}
+
+###
+
+DELETE  http://localhost:5000/subscribers/61d20cd23920fc95ba5d4a7c
