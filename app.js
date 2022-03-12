@@ -23,6 +23,11 @@ app.get('/',(req,res) => {
     res.send('Hello World!!!');
 })
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  next();
+});
+
 app.use(express.json());
 
 const subscribersRouter = require('./routes/subscribers');
